@@ -7,6 +7,7 @@ func main() {
 }
 
 func letterCasePermutation(S string) []string {
-	res := []string{}
+	res := []string{S}
+
 	return res
 }

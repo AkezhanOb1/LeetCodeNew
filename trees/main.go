@@ -3,18 +3,17 @@ package main
 import (
 	"log"
 
-	bts "./binarySearchTree"
+	bst "./binarySearchTree"
 )
 
 func main() {
-	tree := bts.BinarySearchTree{}
-	tree.Constructor(10)
-
-	tree.Insert(6)
-	tree.Insert(15)
+	tree := bst.BinarySearchTree{}
+	tree.Constructor(5)
 	tree.Insert(3)
-	tree.Insert(8)
-	tree.Insert(20)
+	tree.Insert(6)
+	tree.Insert(2)
+	tree.Insert(4)
+	tree.Insert(7)
 
-	log.Println(tree.PreOrderDFS())
+	log.Println(bst.FindTarget(tree.Root, 9))
 }
